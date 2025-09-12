@@ -62,43 +62,19 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="font-semibold text-foreground">Let's Connect</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>San Francisco, CA</p>
+                <p>Kadingilan, Bukidnon</p>
                 <a 
                   href="mailto:alex.johnson@email.com" 
                   className="hover:text-primary transition-colors duration-200 block"
                 >
-                  alex.johnson@email.com
+                  litsbandiala8@gmail.com
                 </a>
                 <a 
                   href="tel:+15551234567" 
                   className="hover:text-primary transition-colors duration-200 block"
                 >
-                  +1 (555) 123-4567
+                  +63997-190-8489
                 </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Section */}
-          <div className="border-t border-border pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="text-sm text-muted-foreground">
-                © {currentYear} Alex Johnson. All rights reserved.
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="text-sm text-muted-foreground">
-                  Built with modern web technologies
-                </div>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={scrollToTop}
-                  className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
-                  aria-label="Scroll to top"
-                >
-                  <ArrowUp className="h-4 w-4" />
-                </Button>
               </div>
             </div>
           </div>

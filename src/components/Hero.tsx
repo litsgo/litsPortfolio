@@ -62,17 +62,18 @@ const Hero = () => {
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="gradient-text">
-                Alex Johnson
+                Lits Bandiala
               </span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-8">
-              Full-Stack Developer & UI/UX Designer
+              Graphic Designer | Multimedia | Front-end Developer
             </h2>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              I create beautiful, responsive web applications with modern technologies. 
-              Passionate about clean code, exceptional user experiences, and bringing innovative ideas to life.
+              I am a Graphic Designer. Currently working as a Marketing Specialist in Multimedia 
+              in the first billionaire cooperative in Bukidnon, Bukidnon
+              Government Employees Multi-purpose Cooperative (BUGEMCO).
             </p>
 
             {/* CTA Buttons */}

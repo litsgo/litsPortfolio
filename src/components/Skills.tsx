@@ -61,10 +61,8 @@ const Skills = () => {
   ];
 
   const toolsAndTechnologies = [
-    'React', 'TypeScript', 'Node.js', 'Python', 'Next.js', 'Vue.js',
-    'PostgreSQL', 'MongoDB', 'Redis', 'AWS', 'Docker', 'Kubernetes',
-    'Tailwind CSS', 'Sass', 'Figma', 'Adobe Creative Suite',
-    'Jest', 'Cypress', 'Webpack', 'Vite', 'GraphQL', 'REST APIs'
+    'Adobe Photoshop', 'Adobe Illustrator', 'Adobe After Effects', 'Adobe InDesign', 'Adobe Lightroom', 'Adobe Premiere',
+    'Davinci Resolve', 'HTML', 'CSS', 'Javascript', 'React JS'
   ];
 
   const softSkills = [

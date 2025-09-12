@@ -9,25 +9,18 @@ const About = () => {
 
   const experiences = [
     {
-      year: '2023 - Present',
-      role: 'Senior Full-Stack Developer', 
-      company: 'TechCorp Solutions',
+      year: 'March 24, 2025 - Present',
+      role: 'Marketing Specialist (Multimedia)', 
+      company: 'Bukidnon Government Employees Multi-purpose Cooperative (BUGEMCO)',
       description: 'Leading development of scalable web applications using React, Node.js, and cloud technologies.',
       icon: Code
     },
     {
-      year: '2021 - 2023',
-      role: 'Frontend Developer',
-      company: 'Digital Agency Pro',
+      year: 'August 1, 2024 - March 24, 2025',
+      role: 'IT Instructor',
+      company: 'STI College Malaybalay',
       description: 'Developed responsive web applications and collaborated with design teams to create exceptional user experiences.',
       icon: Award
-    },
-    {
-      year: '2020 - 2021',
-      role: 'Junior Developer',
-      company: 'StartupXYZ',
-      description: 'Built modern web interfaces and gained experience in agile development methodologies.',
-      icon: Calendar
     }
   ];
 
@@ -58,7 +51,7 @@ const About = () => {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className={`text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              Passionate developer with a love for creating digital experiences that make a difference.
+              Passionate individual with a love in Multimedia and Graphic Design.
             </p>
           </div>
 
@@ -80,17 +73,9 @@ const About = () => {
               <div className="mt-8 space-y-4">
                 <div className="flex items-center text-muted-foreground">
                   <MapPin className="h-5 w-5 mr-3 text-primary" />
-                  <span>San Francisco, CA</span>
+                  <span>Purok 6, Sinaculan, Poblacion, Kadingilan, Bukidnon</span>
                 </div>
-                <div className="flex items-center text-muted-foreground">
-                  <Calendar className="h-5 w-5 mr-3 text-primary" />
-                  <span>5+ Years Experience</span>
                 </div>
-                <div className="flex items-center text-muted-foreground">
-                  <Award className="h-5 w-5 mr-3 text-primary" />
-                  <span>50+ Projects Completed</span>
-                </div>
-              </div>
             </div>
 
             {/* Bio and experience */}
@@ -98,15 +83,14 @@ const About = () => {
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-4">My Story</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I'm a passionate full-stack developer with over 5 years of experience creating 
-                  web applications that combine beautiful design with robust functionality. 
-                  My journey began with a curiosity about how websites work, which evolved into 
-                  a deep love for crafting digital experiences.
+                  Hi! I am Lolito Bandiala Jr. A graduate of Bachelor of Science in Information Technology
+                  at Bukidnon State University - Main Campus (Malaybalay City, Bukidnon).
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  When I'm not coding, you can find me exploring new technologies, contributing 
-                  to open-source projects, or enjoying the great outdoors. I believe in continuous 
-                  learning and staying at the forefront of web development trends.
+                  Most of my works are more on Multimedia, which are Graphic Design, Logo Design, Video Editor,
+                  Photographer, and other stuff that involves in Multimedia. I serve as a Marketing Specialist in Multimedia
+                  at one of the home-grown billionaire coop in Bukidnon, the Bukidnon Government Employees
+                  Multi-purpose Cooperative. 
                 </p>
               </div>
 

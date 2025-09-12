@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Facebook } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -21,19 +21,18 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex.johnson@email.com',
-      href: 'mailto:alex.johnson@email.com'
+      value: 'litsbandiala8@gmail.com',
+      href: 'mailto:litsbandiala8@gmail.com'
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      label: 'Mobile Number',
+      value: '+63997-190-8489',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Kadingilan, Bukidnon',
       href: '#'
     }
   ];
@@ -42,19 +41,19 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/litsgo',
       color: 'hover:text-gray-600'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/lolito-bandiala-074965248/',
       color: 'hover:text-blue-600'
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
+      icon: Facebook,
+      label: 'Facebook',
+      href: 'https://www.facebook.com/litsbandiala8/',
       color: 'hover:text-blue-400'
     }
   ];
