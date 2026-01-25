@@ -17,7 +17,7 @@ const About = () => {
       icon: Code
     },
     {
-      year: 'August 1, 2024 - March 24, 2025',
+      year: 'August 1, 2024 - April 11, 2025',
       role: 'IT Instructor',
       company: 'STI College Malaybalay',
       description: 'Developed responsive web applications and collaborated with design teams to create exceptional user experiences.',
