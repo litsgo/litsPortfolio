@@ -87,24 +87,37 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      // Send using FormSubmit AJAX endpoint with activation token
-      const response = await fetch("https://formsubmit.co/ajax/4f971b9e9ed5da1c23287692fad146b0", {
-        method: "POST",
-        body: new FormData(e.currentTarget as HTMLFormElement),
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
+      // Choose server-side sending: SendGrid preferred, fallback to SMTP, otherwise FormSubmit
+      const useSendGrid = !!import.meta.env.VITE_USE_SENDGRID;
+      const useSMTP = !!import.meta.env.VITE_USE_SMTP;
 
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully!",
-          description: "Thank you for reaching out. I'll get back to you soon.",
+      let response;
+
+      if (useSendGrid) {
+        response = await fetch('/api/sendgrid', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
         });
+      } else if (useSMTP) {
+        response = await fetch('/api/smtp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+      } else {
+        response = await fetch('https://formsubmit.co/ajax/4f971b9e9ed5da1c23287692fad146b0', {
+          method: 'POST',
+          body: new FormData(e.currentTarget as HTMLFormElement),
+          headers: { 'Accept': 'application/json' }
+        });
+      }
 
+      if (response && response.ok) {
+        toast({ title: 'Message sent successfully!', description: "Thank you for reaching out. I'll get back to you soon." });
         setFormData({ name: '', email: '', message: '' });
       } else {
-        const data = await response.json().catch(() => ({}));
+        const data = response ? await response.json().catch(() => ({})) : {};
         throw new Error(data.message || 'Failed to send message');
       }
     } catch (error) {

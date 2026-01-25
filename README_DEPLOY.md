@@ -19,6 +19,23 @@ Option A — Vercel (recommended)
 3. Confirm build settings: `npm run build`, output directory `dist`.
 4. Deploy — Vercel will provide a public URL.
 
+Serverless email (SendGrid / SMTP)
+- To send emails from your domain and have replies go to the submitter, configure serverless email in Vercel.
+- In Vercel dashboard > Project > Settings > Environment Variables, add the following:
+	- `VITE_USE_SENDGRID` = `1` (enable SendGrid path)
+	- `SENDGRID_API_KEY` = your SendGrid API key
+	- `FROM_EMAIL` = the verified sender email (e.g., hello@yourdomain.com)
+	- `TO_EMAIL` = your receiving email (defaults to litsbandiala8@gmail.com)
+
+	Or to use SMTP instead of SendGrid:
+	- `VITE_USE_SMTP` = `1`
+	- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`
+	- `FROM_EMAIL`, `TO_EMAIL`
+
+Notes:
+- SendGrid requires you to verify `FROM_EMAIL` before it will send. Use a verified domain/sender.
+- After deployment, test the form on your live site. The email's Reply-To will be set to the submitter so replies go to them.
+
 Option B — Netlify
 1. Push your repo to GitHub.
 2. Go to https://app.netlify.com/start and connect the repo.
