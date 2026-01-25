@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { MapPin, Calendar, Award, Code } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import profilePhoto from '@/assets/profile-photo.jpg';
+//import profile from '@/assets/profile.jpg';
+import profile from '@/assets/picture.jpg';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -61,7 +62,7 @@ const About = () => {
               <div className="relative">
                 <div className="relative z-10">
                   <img
-                    src={profilePhoto}
+                    src={profile}
                     alt="Alex Johnson - Full-Stack Developer"
                     className="w-80 h-80 rounded-lg object-cover mx-auto shadow-elegant"
                   />
@@ -86,11 +87,17 @@ const About = () => {
                   Hi! I am Lolito Bandiala Jr. A graduate of Bachelor of Science in Information Technology
                   at Bukidnon State University - Main Campus (Malaybalay City, Bukidnon).
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   Most of my works are more on Multimedia, which are Graphic Design, Logo Design, Video Editor,
                   Photographer, and other stuff that involves in Multimedia. I serve as a Marketing Specialist in Multimedia
-                  at one of the home-grown billionaire coop in Bukidnon, the Bukidnon Government Employees
+                  at one of the home-grown billionaire Co-op in Bukidnon, the Bukidnon Government Employees
                   Multi-purpose Cooperative. 
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed">
+                   I have been doing Graphic Design for over 2 years now and I am very passionate about creating visually appealing designs
+                  that effectively communicate messages. I love to learn new things and I am always open to new opportunities.
                 </p>
               </div>
 

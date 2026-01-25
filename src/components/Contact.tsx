@@ -86,17 +86,27 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+      // Send using FormSubmit AJAX endpoint with activation token
+      const response = await fetch("https://formsubmit.co/ajax/4f971b9e9ed5da1c23287692fad146b0", {
+        method: "POST",
+        body: new FormData(e.currentTarget as HTMLFormElement),
+        headers: {
+          'Accept': 'application/json'
+        }
       });
 
-      setFormData({ name: '', email: '', message: '' });
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.message || 'Failed to send message');
+      }
     } catch (error) {
       toast({
         title: "Error sending message",
@@ -127,7 +137,10 @@ const Contact = () => {
             <Card className={`p-8 card-hover transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
               <h3 className="text-2xl font-semibold mb-6">Send me a message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/4f971b9e9ed5da1c23287692fad146b0" method="POST" onSubmit={handleSubmit} className="space-y-6">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="New contact form message" />
+                <input type="hidden" name="_replyto" value={formData.email} />
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Full Name
@@ -257,7 +270,7 @@ const Contact = () => {
                   <span className="font-semibold text-primary">Available for freelance</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Currently accepting new projects for Q2 2024. Let's create something amazing together!
+                  Currently accepting new projects. Let's create something amazing together!
                 </p>
               </Card>
             </div>

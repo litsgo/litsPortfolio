@@ -67,7 +67,7 @@ const Hero = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-8">
-              Graphic Designer | Multimedia | Front-end Developer
+              Graphic Designer | Multimedia |
             </h2>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
@@ -87,14 +87,20 @@ const Hero = () => {
                 Hire Me
               </Button>
               
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              <a 
+                href="https://drive.google.com/file/d/1ubzKAfffrbD2V6ehUsj8hx8OqICErgFw/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  View/Download Resume
+                </Button>
+              </a>
             </div>
           </div>
 

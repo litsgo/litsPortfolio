@@ -35,11 +35,6 @@ const Footer = () => {
                 Building digital experiences that combine beautiful design with robust functionality. 
                 Let's create something amazing together.
               </p>
-              <div className="flex items-center text-sm text-muted-foreground">
-                <span>Made with</span>
-                <Heart className="h-4 w-4 mx-1 text-red-500 fill-current" />
-                <span>using React & TypeScript</span>
-              </div>
             </div>
 
             {/* Quick Links */}

@@ -2,14 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { 
-  Code, 
   Palette, 
-  Database, 
-  Cloud, 
-  Smartphone, 
   Globe,
   Settings,
-  Users
+  Users,
+  Camera
 } from 'lucide-react';
 
 const Skills = () => {
@@ -19,50 +16,30 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Frontend Development',
-      icon: Code,
+      title: 'Graphic Design',
+      icon: Palette,
       skills: [
-        { name: 'React/Next.js', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Tailwind CSS', level: 95 },
-        { name: 'JavaScript (ES6+)', level: 92 }
+        { name: 'Adobe Photoshop', level: 90 },
+        { name: 'Affinity by Canva', level: 70 },
+        { name: 'Adobe Illustrator', level: 60 },
+        { name: 'Adobe Indesign', level: 60 },
+        { name: 'Adobe After Efefcts', level: 50 },
+        { name: 'Adobe Lightroom', level: 60 },
       ]
     },
     {
-      title: 'Backend Development',
-      icon: Database,
+      title: 'Video Production',
+      icon: Camera,
       skills: [
-        { name: 'Node.js', level: 88 },
-        { name: 'Python', level: 85 },
-        { name: 'PostgreSQL', level: 82 },
-        { name: 'MongoDB', level: 80 }
-      ]
-    },
-    {
-      title: 'Mobile & Cross-Platform',
-      icon: Smartphone,
-      skills: [
-        { name: 'React Native', level: 85 },
-        { name: 'Flutter', level: 75 },
-        { name: 'PWA Development', level: 88 },
-        { name: 'Responsive Design', level: 95 }
-      ]
-    },
-    {
-      title: 'DevOps & Cloud',
-      icon: Cloud,
-      skills: [
-        { name: 'AWS', level: 80 },
-        { name: 'Docker', level: 85 },
-        { name: 'CI/CD', level: 82 },
-        { name: 'Git/GitHub', level: 95 }
+        { name: 'Adobe Premiere Pro', level: 80 },
+        { name: 'Davinci Resolve', level: 70 }
       ]
     }
   ];
 
   const toolsAndTechnologies = [
     'Adobe Photoshop', 'Adobe Illustrator', 'Adobe After Effects', 'Adobe InDesign', 'Adobe Lightroom', 'Adobe Premiere',
-    'Davinci Resolve', 'HTML', 'CSS', 'Javascript', 'React JS'
+    'Davinci Resolve', 'Affinity by Canva', 'OBS', 'HTML', 'CSS', 'Javascript', 'React JS'
   ];
 
   const softSkills = [

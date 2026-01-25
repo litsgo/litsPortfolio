@@ -1,11 +1,21 @@
 import { useState, useEffect, useRef } from 'react';
-import { ExternalLink, Github, Smartphone, Monitor, Globe } from 'lucide-react';
+import { ExternalLink, Smartphone, Monitor, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import ecommerceImg from '@/assets/project-ecommerce.jpg';
-import dashboardImg from '@/assets/project-dashboard.jpg';
-import mobileImg from '@/assets/project-mobile.jpg';
+import finalBCC from '@/assets/Final BCC 2.png';
+import finalBLC from '@/assets/Final BLC.png';
+import frontCover from '@/assets/Front Cover Design 2.png';
+import frontCover2 from '@/assets/Front Cover Design 3.png';
+import frontCover3 from '@/assets/Front Cover Design 4.png';
+import connectingDesign from '@/assets/Connecting Design.jpg';
+import approvedLogoMART from '@/assets/Approved Logo MART.png';
+import coverPage4 from '@/assets/Cover Page 4.png';
+import coverPage5 from '@/assets/Cover Page 5.png';
+import coverPage6 from '@/assets/Cover Page 6.png';
+import coverPage7 from '@/assets/Cover Page 7.png';
+import coverPage8 from '@/assets/Cover Page 8.jpg';
+import coverPage9 from '@/assets/Cover Page 9.jpg';
+
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,35 +23,96 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A modern, fully-featured e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, payment processing, inventory management, and admin dashboard.',
-      image: ecommerceImg,
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
+      title: 'BUGEMCO Commercial Building Logo',
+      //description: 'A modern, fully-featured e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, payment processing, inventory management, and admin dashboard.',
+      image: finalBCC,
       demoUrl: '#',
       githubUrl: '#',
-      type: 'Web Application',
-      icon: Globe
     },
     {
-      title: 'Task Management Dashboard',
-      description: 'A comprehensive project management tool with real-time collaboration features. Built with React, TypeScript, and Firebase for seamless team productivity.',
-      image: dashboardImg,
-      tags: ['React', 'TypeScript', 'Firebase', 'Material-UI', 'Chart.js'],
+      title: 'BUGEMCO MART Logo',
+      //description: 'A comprehensive project management tool with real-time collaboration features. Built with React, TypeScript, and Firebase for seamless team productivity.',
+      image: approvedLogoMART,
       demoUrl: '#',
       githubUrl: '#',
-      type: 'Dashboard',
-      icon: Monitor
     },
     {
-      title: 'Weather Mobile App',
-      description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
-      image: mobileImg,
-      tags: ['React Native', 'APIs', 'Geolocation', 'Animations'],
+      title: 'BUGEMCO Learning Center Logo',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: finalBLC,
       demoUrl: '#',
       githubUrl: '#',
-      type: 'Mobile App',
-      icon: Smartphone
-    }
+    },
+    {
+      title: 'Product Catalog Design Cover Page 1',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: frontCover,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Product Catalog Design Cover Page 2',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: frontCover2,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Product Catalog Design Cover Page 3',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: frontCover3,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Connecting Design',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: connectingDesign,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Sample Cover Page 1',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: coverPage4,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Sample Cover Page 2',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: coverPage5,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Sample Cover Page 3',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: coverPage6,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Sample Cover Page 4',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: coverPage7,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Sample Cover Page 5',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: coverPage8,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Sample Cover Page 6',
+      //description: 'A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Built with React Native and weather APIs.',
+      image: coverPage9,
+      demoUrl: '#',
+      githubUrl: '#',
+    },
   ];
 
   useEffect(() => {
@@ -68,10 +139,10 @@ const Projects = () => {
           {/* Section header */}
           <div className="text-center mb-16">
             <h2 className={`text-4xl md:text-5xl font-bold mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              Featured <span className="gradient-text">Projects</span>
+              Featured <span className="gradient-text">Projects</span> and <span className="gradient-text">Logos</span> 
             </h2>
             <p className={`text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              A showcase of my recent work, featuring web applications, mobile apps, and creative digital solutions.
+              These are some of my works showcasing my skills in Graphic Design. I am a fan of typography, color theory, and visual storytelling.
             </p>
           </div>
 
@@ -88,17 +159,9 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={`${project.title} screenshot`}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-90 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
-                  {/* Project type badge */}
-                  <div className="absolute top-4 left-4">
-                    <Badge variant="secondary" className="bg-background/90 text-foreground">
-                      <project.icon className="h-3 w-3 mr-1" />
-                      {project.type}
-                    </Badge>
-                  </div>
 
                   {/* Hover overlay with buttons */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -110,7 +173,7 @@ const Projects = () => {
                       >
                         <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="h-4 w-4 mr-2" />
-                          Demo
+                          View Logo
                         </a>
                       </Button>
                       <Button 
@@ -119,35 +182,21 @@ const Projects = () => {
                         className="bg-background/90 hover:bg-background"
                         asChild
                       >
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4 mr-2" />
-                          Code
-                        </a>
                       </Button>
                     </div>
                   </div>
                 </div>
 
                 {/* Project content */}
-                <div className="p-6">
+                <div className="p-10">
                   <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-200">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  {/*<p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                     {project.description}
-                  </p>
-
+                  </p>*/}
                   {/* Technology tags */}
                   <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Badge 
-                        key={tagIndex} 
-                        variant="outline" 
-                        className="text-xs border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
                   </div>
                 </div>
               </Card>
@@ -155,16 +204,16 @@ const Projects = () => {
           </div>
 
           {/* View more projects button */}
-          <div className={`text-center mt-12 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          {/*<div className={`text-center mt-12 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <Button 
               variant="outline" 
               size="lg"
               className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
-              <Github className="mr-2 h-5 w-5" />
+              
               View More on GitHub
             </Button>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
