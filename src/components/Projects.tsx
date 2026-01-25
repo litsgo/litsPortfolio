@@ -173,7 +173,7 @@ const Projects = () => {
                       >
                         <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="h-4 w-4 mr-2" />
-                          View Logo
+                          View Demo
                         </a>
                       </Button>
                       <Button 
