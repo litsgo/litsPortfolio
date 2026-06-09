@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
+import FacebookPubmats from '@/components/FacebookPubmats';
 import Skills from '@/components/Skills';
 import Credentials from '@/components/Credentials';
 import Contact from '@/components/Contact';
@@ -15,6 +16,7 @@ const Index = () => {
         <Hero />
         <About />
         <Projects />
+        <FacebookPubmats />
         <Skills />
         <Credentials />
         <Contact />
