@@ -12,6 +12,8 @@ import fb7 from '@/assets/fb7.png';
 import fb8 from '@/assets/fb8.png';
 import fb9 from '@/assets/fb9.png';
 import fb10 from '@/assets/fb10.jpg';
+import fb11 from '@/assets/fb11.jpg';
+import fb12 from '@/assets/fb12.png';
 
 const FacebookPubmats = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -86,6 +88,20 @@ const FacebookPubmats = () => {
       description: 'A polished Facebook promotional graphic designed for brand awareness and engagement.',
       image: fb10,
       demoUrl: 'https://drive.google.com/file/d/1YMxSAcLw-518Ou0eDUH4pwSfJ-h3_IaM/view?usp=drive_link',
+      githubUrl: '#',
+    },
+    {
+      title: 'Facebook Pubmat Design',
+      description: 'A polished Facebook promotional graphic designed for brand awareness and engagement.',
+      image: fb11,
+      demoUrl: 'https://drive.google.com/file/d/1AfZAylRhNt_B3LVJkAyVIm-O__lAMJp7/view?usp=drive_link',
+      githubUrl: '#',
+    },
+    {
+      title: 'Facebook Pubmat Design',
+      description: 'A polished Facebook promotional graphic designed for brand awareness and engagement.',
+      image: fb12,
+      demoUrl: 'https://drive.google.com/file/d/19aepdTPPLwSPqohs_AhxB0ozDtl4Og9n/view?usp=drive_link',
       githubUrl: '#',
     },
   ];
