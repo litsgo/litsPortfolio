@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { MapPin, Calendar, Award, Code } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 //import profile from '@/assets/profile.jpg';
-import profile from '@/assets/picture.jpg';
+import profile from '@/assets/picture1.jpg';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,8 +63,8 @@ const About = () => {
                 <div className="relative z-10">
                   <img
                     src={profile}
-                    alt="Alex Johnson - Full-Stack Developer"
-                    className="w-80 h-80 rounded-lg object-cover mx-auto shadow-elegant"
+                    alt="Lits Bandiala - Multimedia and Graphic Designer"
+                    className="w-80 h-90 rounded-lg object-cover mx-auto shadow-elegant"
                   />
                 </div>
                 {/* Decorative background */}
@@ -82,7 +82,7 @@ const About = () => {
             {/* Bio and experience */}
             <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
               <div className="mb-8">
-                <h3 className="text-2xl font-bold mb-4">My Story</h3>
+                <h3 className="text-2xl font-bold mb-4">Hi! I am Lits</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Hi! I am Lolito Bandiala Jr. A graduate of Bachelor of Science in Information Technology
                   at Bukidnon State University - Main Campus (Malaybalay City, Bukidnon).
